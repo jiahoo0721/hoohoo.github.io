@@ -33,6 +33,18 @@ body {
 	line-height: 1;
 }
 
+#zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#zoom:hover {
+  transform: scale(1.5); 
+}
+
 ol, ul {
 	list-style: none;
 }
