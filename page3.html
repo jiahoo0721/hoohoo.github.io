@@ -76,28 +76,28 @@
 									The work consists of jpgs, pngs, animations, VR project and video editing. One of the work I accomplished with my groupmates is VR dog.  </p>
 									<div class="features">
 										<article>
-											<a class="image"><img src="images/Dubu Tea.png" alt="Dubu Tea" /></a>
+											<a class="image"><img id="img1" src="images/Dubu Tea.png" alt="Dubu Tea" /></a>
 											<div class="inner">
 												<h4>My own design for packaging</h4>
 												<p>A hero white duck animal boba package design for cup mockup. This design was chosen as the consolation prize in Adobe Digital Edge Awards 2020 | ILLUSTRATION COMPETITIONS.</p>
 											</div>
 										</article>
 										<article>
-											<a class="image"><img src="images/work1.jpg" alt="Wolf and butterfly with glowing effect" /></a>
+											<a class="image"><img id="img2" src="images/work1.jpg" alt="Wolf and butterfly with glowing effect" /></a>
 											<div class="inner">
 												<h4>My first photoshop work</h4>
 												<p>A wolf with a glowing effect butterfly created using Adobe Photoshop. The idea of this final product is based on famous Disney movie which is Bolt.</p>
 											</div>
 										</article>
 										<article>
-											<a class="image"><img src="images/Work 5.jpg" alt="Tom Holland with dispersion effect" /></a>
+											<a class="image"><img id="img3" src="images/Work 5.jpg" alt="Tom Holland with dispersion effect" /></a>
 											<div class="inner">
 												<h4>An image produced as a hobby</h4>
 												<p>Following the trend of Avenger, Tom Holland with dispersion effect. The effect is to perform the effect in the movie where Thanos snap with Infinite Gauntlet and half of the heroes was gone.</p>
 											</div>
 										</article>
 										<article>
-											<a class="image"><img id="img1" src="images/3D image1.jpg" alt="Chessboard with chesses" /></a>
+											<a class="image"><img id="img4" src="images/3D image1.jpg" alt="Chessboard with chesses" /></a>
 											<div class="inner">
 												<h4>My first ever 3D object</h4>
 												<p>3D chessboard created using Adobe Photoshop. This 3D chessboard was used in later for my game development which allow players to play chess as a minigame in my game.</p>
@@ -111,16 +111,62 @@
 								  <img class="modal-content" id="img01">
 								  <div id="caption"></div>
 								</div>
+								
+								<div id="myModal2" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img02">
+								  <div id="caption"></div>
+								</div>
+								
+								<div id="myModal3" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img03">
+								  <div id="caption"></div>
+								</div>
+								
+								<div id="myModal4" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img04">
+								  <div id="caption"></div>
+								</div>
 
 								<script>
 								// Get the modal
 								var modal = document.getElementById("myModal");
 
 								// Get the image and insert it inside the modal - use its "alt" text as a caption
-								var img = document.getElementById("img1");
+								var img001 = document.getElementById("img1");
 								var modalImg = document.getElementById("img01");
 								var captionText = document.getElementById("caption");
-								img.onclick = function(){
+									
+								var img002 = document.getElementById("img2");
+								var modalImg = document.getElementById("img02");
+								var captionText = document.getElementById("caption");
+									
+								var img003 = document.getElementById("img3");
+								var modalImg = document.getElementById("img03");
+								var captionText = document.getElementById("caption");
+									
+								var img004 = document.getElementById("img4");
+								var modalImg = document.getElementById("img04");
+								var captionText = document.getElementById("caption");
+									
+								img001.onclick = function(){
+								  modal.style.display = "block";
+								  modalImg.src = this.src;
+								  captionText.innerHTML = this.alt;
+								}
+									img002.onclick = function(){
+								  modal.style.display = "block";
+								  modalImg.src = this.src;
+								  captionText.innerHTML = this.alt;
+								}
+									img003.onclick = function(){
+								  modal.style.display = "block";
+								  modalImg.src = this.src;
+								  captionText.innerHTML = this.alt;
+								}
+									img004.onclick = function(){
 								  modal.style.display = "block";
 								  modalImg.src = this.src;
 								  captionText.innerHTML = this.alt;
