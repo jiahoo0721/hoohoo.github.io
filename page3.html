@@ -76,28 +76,28 @@
 									The work consists of jpgs, pngs, animations, VR project and video editing. One of the work I accomplished with my groupmates is VR dog.  </p>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/Dubu Tea.png" alt="Dubu Tea" /></a>
+											<a class="image"><img src="images/Dubu Tea.png" alt="Dubu Tea" /></a>
 											<div class="inner">
 												<h4>My own design for packaging</h4>
 												<p>A hero white duck animal boba package design for cup mockup. This design was chosen as the consolation prize in Adobe Digital Edge Awards 2020 | ILLUSTRATION COMPETITIONS.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/work1.jpg" alt="Wolf and butterfly with glowing effect" /></a>
+											<a class="image"><img src="images/work1.jpg" alt="Wolf and butterfly with glowing effect" /></a>
 											<div class="inner">
 												<h4>My first photoshop work</h4>
 												<p>A wolf with a glowing effect butterfly created using Adobe Photoshop. The idea of this final product is based on famous Disney movie which is Bolt.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/Work 5.jpg" alt="Tom Holland with dispersion effect" /></a>
+											<a class="image"><img src="images/Work 5.jpg" alt="Tom Holland with dispersion effect" /></a>
 											<div class="inner">
 												<h4>An image produced as a hobby</h4>
 												<p>Following the trend of Avenger, Tom Holland with dispersion effect. The effect is to perform the effect in the movie where Thanos snap with Infinite Gauntlet and half of the heroes was gone.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/3D image1.jpg" alt="Chessboard with chesses" /></a>
+											<a id="img1" class="image"><img src="images/3D image1.jpg" alt="Chessboard with chesses" /></a>
 											<div class="inner">
 												<h4>My first ever 3D object</h4>
 												<p>3D chessboard created using Adobe Photoshop. This 3D chessboard was used in later for my game development which allow players to play chess as a minigame in my game.</p>
@@ -106,6 +106,35 @@
 									</div>
 								</div>
 							</section>
+								<div id="myModal" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img01">
+								  <div id="caption"></div>
+								</div>
+
+								<script>
+								// Get the modal
+								var modal = document.getElementById("myModal");
+
+								// Get the image and insert it inside the modal - use its "alt" text as a caption
+								var img = document.getElementById("img1");
+								var modalImg = document.getElementById("img01");
+								var captionText = document.getElementById("caption");
+								img.onclick = function(){
+								  modal.style.display = "block";
+								  modalImg.src = this.src;
+								  captionText.innerHTML = this.alt;
+								}
+
+								// Get the <span> element that closes the modal
+								var span = document.getElementsByClassName("close")[0];
+
+								// When the user clicks on <span> (x), close the modal
+								span.onclick = function() { 
+								  modal.style.display = "none";
+								}
+								</script>
+
 
 				<!-- Footer -->
 					<section id="footer">
