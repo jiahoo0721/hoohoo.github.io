@@ -107,7 +107,7 @@
 								</div>
 							</section>
 								<div id="myModal" class="modal">
-								  <span id="close" class="close">&times;</span>
+								  <span id="close1" class="close">&times;</span>
 								  <img class="modal-content" id="img01">
 								  <div id="caption"></div>
 								</div>
@@ -159,27 +159,27 @@
 								  modalImg.src = this.src;
 								  captionText.innerHTML = this.alt;
 								}
-									img002.onclick = function2(){
+									img002.onclick = function(){
 								  modal2.style.display = "block";
 								  modalImg2.src = this.src;
 								  captionText2.innerHTML = this.alt;
 								}
-									img003.onclick = function3(){
+									img003.onclick = function(){
 								  modal3.style.display = "block";
 								  modalImg3.src = this.src;
 								  captionText3.innerHTML = this.alt;
 								}
-									img004.onclick = function4(){
+									img004.onclick = function(){
 								  modal4.style.display = "block";
 								  modalImg4.src = this.src;
 								  captionText4.innerHTML = this.alt;
 								}
 
 								// Get the <span> element that closes the modal
-								var span = document.getElementsByClassName("close")[0];
-								var span2 = document.getElementsByClassName("close2")[0];
-								var span3 = document.getElementsByClassName("close3")[0];
-								var span4 = document.getElementsByClassName("close4")[0];
+								var span = document.getElementsById("close1")[0];
+								var span2 = document.getElementsById("close2")[0];
+								var span3 = document.getElementsById("close3")[0];
+								var span4 = document.getElementsById("close4")[0];
 
 
 								// When the user clicks on <span> (x), close the modal
